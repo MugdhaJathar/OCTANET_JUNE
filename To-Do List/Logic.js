@@ -1,9 +1,7 @@
-// Get the input field, button, and task list
 const taskInput = document.getElementById("taskInput");
 const addTaskBtn = document.getElementById("addTaskBtn");
 const taskList = document.getElementById("taskList");
 
-// Function to add a new task
 function addTask() {
   const taskText = taskInput.value;
 
@@ -18,10 +16,8 @@ function addTask() {
   }
 }
 
-// Function to toggle task completion
 function toggleTask() {
   this.classList.toggle("completed");
 }
 
-// Event listener for the add task button
 addTaskBtn.addEventListener("click", addTask);
